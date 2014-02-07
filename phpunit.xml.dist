@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="vendor/autoload.php" colors="true">
+
+    <testsuites>
+        <testsuite name="StatusCake">
+            <directory>./tests/StatusCake/Tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src/StatusCake</directory>
+        </whitelist>
+    </filter>
+
+    <php>
+        <var name="username" value="StatusCakeUserName"/>
+        <var name="token" value="StatusCakeApiToken"/>
+    </php>
+
+</phpunit>

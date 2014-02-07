@@ -1,0 +1,23 @@
+{
+    "name":             "basilicom/statuscake",
+    "description":      "Interface for StatusCake API",
+    "keywords":         ["monitoring", "api"],
+    "homepage":         "http://basilicom.de",
+    "license":          "MIT",
+    "authors": [
+        {
+            "name":         "Christoph Luehr",
+            "email":        "christoph.luehr@basilicom.de",
+            "role":         "Head of Devlopment"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "StatusCake": "src/",
+            "StatusCake\\Tests": "tests/"
+        }
+    }
+}
